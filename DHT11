@@ -32,5 +32,9 @@ while True:
 	"Humidity":'Hum = %.1f %%' % humidity
 	})
 	time.sleep(1)
-	#if temperature>20:
-	#	red.on()
+	if temperature>50:
+		red.on()
+		print "Cooler ON"
+		ref.push({
+		"Cooler":"Hot: Cooler ON"
+		})
