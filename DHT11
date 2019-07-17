@@ -16,9 +16,9 @@ red = LED(21)
 
 
 
-cred=credentials.Certificate('firebase.json')
+cred=credentials.Certificate('Your Jason file goes here.json')
 firebase_admin.initialize_app(cred,{
-'databaseURL': "https://rpi-humad.firebaseio.com"
+'databaseURL': "Your Data Base URL goes here"
 })
 
 ref=db.reference('Status')
